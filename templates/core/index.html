@@ -88,18 +88,20 @@
                 </tr>
                 </thead>
                 <tbody>
-{#                {% for employee in employees %}#}
-{#                    <tr>#}
-{#                        <td><a href="{% url 'details employee' employee.id %}">{{ employee.first_name }}</a></td>#}
-{#                        <td><a href="{% url 'details employee' employee.id %}">{{ employee.last_name }}</a></td>#}
-{#                        <td><a href="{% url 'details employee' employee.id %}">{{ employee.mobile }}</a></td>#}
-{#                        <td><a href="{% url 'details employee' employee.id %}">{{ employee.start_date }}</a></td>#}
-{#                        <td><a href="{% url 'details employee' employee.id %}">{{ employee.position }}</a></td>#}
-{#                        <td><a href="{% url 'details employee' employee.id %}">{{ employee.salary }}</a></td>#}
-{#                        <td><a href="{% url 'details employee' employee.id %}">{{ employee.employee_id }}</a></td>#}
-{#                    </tr>#}
-{##}
-{#                {% endfor %}#}
+                {% if employees %}
+                    {% for employee in employees %}
+                        <tr>
+                            <td><a href="{% url 'details employee' employee.id %}">{{ employee.first_name }}</a></td>
+                            <td><a href="{% url 'details employee' employee.id %}">{{ employee.last_name }}</a></td>
+                            <td><a href="{% url 'details employee' employee.id %}">{{ employee.mobile }}</a></td>
+                            <td><a href="{% url 'details employee' employee.id %}">{{ employee.start_date }}</a></td>
+                            <td><a href="{% url 'details employee' employee.id %}">{{ employee.position }}</a></td>
+                            <td><a href="{% url 'details employee' employee.id %}">{{ employee.salary }}</a></td>
+                            <td><a href="{% url 'details employee' employee.id %}">{{ employee.employee_id }}</a></td>
+                        </tr>
+
+                    {% endfor %}
+                {% endif %}
 
                 <!-- More rows... -->
                 </tbody>
