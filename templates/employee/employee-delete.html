@@ -1,0 +1,27 @@
+{% load bootstrap5 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'employee/css/bootstrap.css' %}"/>
+    <title>Employees Page</title>
+</head>
+<body>
+<div class="container-sm">
+    <div class="card">
+        <div class="card-body">
+            <form action="{% url 'delete employee' id=employee.id %}" method="post" class="form">
+                {#{% csrf_token %}#}
+                {% bootstrap_form form %}
+                {% buttons %}
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                {% endbuttons %}
+                {% csrf_token %}
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

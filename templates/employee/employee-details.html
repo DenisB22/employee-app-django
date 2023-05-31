@@ -1,0 +1,29 @@
+{% load bootstrap5 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'employee/css/bootstrap.css' %}"/>
+    <title>Employees Page</title>
+</head>
+<body>
+<div class="container-sm justify-content-center align-items-center d-flex mt-xl-5">
+    <div class="card" style="width: 18rem;">
+
+        <div class="card-body">
+            <h5 class="card-title">Name: {{ employee.first_name }} {{ employee.last_name }}</h5>
+            <br/>
+            <p class="card-text"><b>Mobile: </b> {{ employee.mobile }}</p>
+            <p class="card-text"><b>Start Date: </b>{{ employee.start_date }}</p>
+            <p class="card-text"><b>Position: </b> {{ employee.position }}</p>
+            <p class="card-text"><b>Salary: </b> {{ employee.salary }}</p>
+            <a href="{% url 'edit employee' id=employee.id %}" class="btn btn-primary">Edit</a>
+            <a href="{% url 'delete employee' id=employee.id%}" class="btn btn-danger">Delete</a>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
