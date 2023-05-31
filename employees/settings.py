@@ -110,10 +110,10 @@ WSGI_APPLICATION = 'employees.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': "django.db.backends.mysql",
-        'NAME': "njfvp7ikio6mvrqs",
-        'USER': "rdh01stkub2eq1q8",
-        'PASSWORD': "rymw5ey4yzqje8h2",
-        'HOST': "ilzyz0heng1bygi8.chr7pe7iynqr.eu-west-1.rds.amazonaws.com",
+        'NAME': "p92astf1a7sxncbw",
+        'USER': "ng26s921xd8lkc81",
+        'PASSWORD': "m7e48zz19m582mvc",
+        'HOST': "spryrr1myu6oalwl.chr7pe7iynqr.eu-west-1.rds.amazonaws.com",
         'PORT': "3306",
     }
 }
