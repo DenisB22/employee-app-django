@@ -31,7 +31,8 @@ SECRET_KEY = "django-insecure-x9x7%&7*0jit5dk2fk=7xi#w8qni@w^633vwrwe*7&!mx1l^8y
 DEBUG = False
 
 # ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(' ')
-ALLOWED_HOSTS = ["localhost",  "127.0.0.1", "employees-app.herokuapp.com", "www.employees-app.herokuapp.com"]
+ALLOWED_HOSTS = ["localhost",  "127.0.0.1", "employees-app.herokuapp.com"]
+# ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -101,8 +102,8 @@ DATABASES = {
         'NAME': "employees",
         'USER': "root",
         'PASSWORD': "PythonDev1997",
-        'PORT': "3306",
         'HOST': "127.0.0.1",
+        'PORT': "3306",
     }
 }
 
