@@ -96,13 +96,24 @@ WSGI_APPLICATION = 'employees.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': "django.db.backends.mysql",
+#         'NAME': "employees",
+#         'USER': "root",
+#         'PASSWORD': "PythonDev1997",
+#         'HOST': "127.0.0.1",
+#         'PORT': "3306",
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': "django.db.backends.mysql",
-        'NAME': "employees",
-        'USER': "root",
-        'PASSWORD': "PythonDev1997",
-        'HOST': "127.0.0.1",
+        'NAME': "njfvp7ikio6mvrqs",
+        'USER': "rdh01stkub2eq1q8",
+        'PASSWORD': "rymw5ey4yzqje8h2",
+        'HOST': "ilzyz0heng1bygi8.chr7pe7iynqr.eu-west-1.rds.amazonaws.com",
         'PORT': "3306",
     }
 }
